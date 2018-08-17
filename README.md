@@ -44,6 +44,6 @@ Standards-related materials all live inside repositories owned by the ALIFE-Data
  - A vetted collection of tools that work with standards-compliant data, which live in the tools repository. These tools incolude converters into and out of the standards format. If you have written a tool that you would like to add to this repository, you can request that it be added via pull request, issue, or an e-mail to the maintainers. The maintainers will then confirm that the tool works with the current version of the standards before accepting the addition. Updates to tools can be added in the same way. This repository also houses a list of third-party tools that work with data in standards format. These tools are not vetted or tested by the ALife Data Stanards maintainers. You can request that a tool be added to this list with a pull request, GitHub issue or e-mail.
  
  #### Current maintainers:
- - [Cliff Bohm](www.cliffbohm.weebly.com) (cliff.bohm@gmail.com)
- - [Alexander Lalejini](www.lalejini.com) (amlalejini@gmail.com)
- - [Emily Dolson](www.emilyldolson.com) (EmilyLDolson@gmail.com)
+ - [Cliff Bohm](https://www.cliffbohm.weebly.com) (cliff.bohm@gmail.com)
+ - [Alexander Lalejini](https://www.lalejini.com) (amlalejini@gmail.com)
+ - [Emily Dolson](https://www.emilyldolson.com) (EmilyLDolson@gmail.com)
