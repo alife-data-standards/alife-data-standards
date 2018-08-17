@@ -34,5 +34,5 @@ Suggestions for this are welcome!
 
 ## Standard Data Types
 
-- [Phylogeny](./phylogeny/)
-- [Genome](./genome/)
+- [Phylogeny](./phylogeny.md)
+- [Genome](./genome.md)
