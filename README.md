@@ -36,3 +36,14 @@ Suggestions for this are welcome!
 
 - [Phylogeny](./phylogeny.md)
 - [Genome](./genome.md)
+
+## Organization
+
+Standards-related materials all live inside repositories owned by the ALIFE-Data-Standards organization. These materials are divided into two groups:
+ - The standards themselves, which live in this repository. Changes to the standards can be proposed in three different ways (to accomodate different levels of comfort with GitHub): submitting a pull request with the proposed changes to this repository, making an issue on this repository, or e-mailing the standards maintainers (listed below). Once a modification is proposed, discussion on it will take place via GitHub issues (which also supports contributions via e-mail). When consensus is reached, the change will be added to the official standards. 
+ - A vetted collection of tools that work with standards-compliant data, which live in the tools repository. These tools incolude converters into and out of the standards format. If you have written a tool that you would like to add to this repository, you can request that it be added via pull request, issue, or an e-mail to the maintainers. The maintainers will then confirm that the tool works with the current version of the standards before accepting the addition. Updates to tools can be added in the same way. This repository also houses a list of third-party tools that work with data in standards format. These tools are not vetted or tested by the ALife Data Stanards maintainers. You can request that a tool be added to this list with a pull request, GitHub issue or e-mail.
+ 
+ #### Current maintainers:
+ - [Cliff Bohm](www.cliffbohm.weebly.com) (cliff.bohm@gmail.com)
+ - [Alexander Lalejini](www.lalejini.com) (amlalejini@gmail.com)
+ - [Emily Dolson](www.emilyldolson.com) (EmilyLDolson@gmail.com)
