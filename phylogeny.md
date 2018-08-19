@@ -11,10 +11,14 @@ this information to conform to the standard.
 - **id**: A unique identifier. Must be a non-negative integer.
 - **ancestor_list**: A list of ids. These must correspond to other entries in the current file. They are assumed to refer to the most direct ancestor(s) of this entry that exist with in a file. In many cases, these will be the direct parent(s) of this entry, but this will not always be the case.
 
-## Conventional Fields
+## Optional Fields with Naming Conventions
 
-These are conventional, but not required fields, for describing phylogeny. If you
-have any of this information in your data, you should format it conventionally.
+These are common, but not required fields, for describing phylogeny. If you
+have any of this information in your data, you should format it according to the conventions.
 
 - **origin_time:** Time that this entry first came into existance (in whatever time units the system that generated this data uses).
 - **destruction_time:** Time that this entry went out of existance (in whatever time units the system that generates this data uses).
+
+## Additional Data
+
+Additional fields can always be added (as long as their names do not conflict with the names of existing fields). Some tools may require specific additional fields to be present. If it becomes apparent at any point that one of these fields is of use to a sizable portion of the community, a discussion should be opened about adding it to the official list of optional fields with naming conventions.
