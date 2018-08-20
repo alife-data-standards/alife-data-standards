@@ -22,3 +22,5 @@ have any of this information in your data, you should format it according to the
 ## Additional Data
 
 Additional fields can always be added (as long as their names do not conflict with the names of existing fields). Some tools may require specific additional fields to be present. If it becomes apparent at any point that one of these fields is of use to a sizable portion of the community, a discussion should be opened about adding it to the official list of optional fields with naming conventions.
+
+# The phylogeny standard is still under active discussion. Join in [here](https://github.com/alife-data-standards/alife-data-standards/issues?q=is%3Aissue+is%3Aopen+label%3Aphylogeny)!
