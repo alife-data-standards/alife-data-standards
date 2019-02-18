@@ -1,3 +1,6 @@
+---
+title: Genome Standard
+---
 # Genome Standard
 
 ## Required Fields

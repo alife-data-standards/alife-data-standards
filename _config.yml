@@ -1,5 +1,9 @@
 theme: jekyll-theme-cayman
 title: Artificial Life Community Data Standards
+title_suffix: ALIFE Data Standards
 plugins:
   - jekyll-relative-links
 baseurl: /alife-data-standards
+
+titles_from_headings:
+  enabled:     false
