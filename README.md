@@ -1,3 +1,18 @@
+
+**Navigation**
+
+<!-- TOC -->
+
+- [Overview](#overview)
+- [What are we trying to standardize?](#what-are-we-trying-to-standardize)
+- [A living standard](#a-living-standard)
+- [Standard data types](#standard-data-types)
+- [Organization](#organization)
+  - [Current maintainers](#current-maintainers)
+  - [Code of Conduct](#code-of-conduct)
+
+<!-- /TOC -->
+
 ## Overview
 
 The Artificial Life (ALife) community is awash with disparate software systems,
@@ -61,3 +76,7 @@ Standards-related materials all live inside repositories owned by the alife-data
 - [Cliff Bohm](http://www.cliffbohm.weebly.com) (cliff.bohm@gmail.com)
 - [Alexander Lalejini](http://www.lalejini.com) (amlalejini@gmail.com)
 - [Emily Dolson](http://www.emilyldolson.com) (EmilyLDolson@gmail.com)
+
+### Code of Conduct
+
+Find our [code of conduct here](./CODE_OF_CONDUCT.md).
