@@ -130,6 +130,9 @@ A few things should be noted:
     - Note the commas after all properties but the last one for entry 22 (Lines 3-5 vs line 6). 
     - Also note that there is a comma after each entry other than the last one.  
 
+**Example**
+
+[JSON of example phylogeny (pictured above)]('./examples/phylogeny_toy_json.json'). 
 
 
 
