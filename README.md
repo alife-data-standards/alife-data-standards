@@ -59,7 +59,7 @@ Instead of defining a standard for genomes in multiple places, we define it once
 The standards that we have begun developing thus far are:
 
 - [Phylogeny](./phylogeny.md)
-- [Genome](./genome.md)
+- [Genome](./genome.md) (under discussion)
 
 In the long run, there are more components of ALife systems that we hope ot have standards for, including:
 
