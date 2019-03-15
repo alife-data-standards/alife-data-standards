@@ -132,7 +132,7 @@ A few things should be noted:
 
 **Example**
 
-[JSON of example phylogeny (pictured above)]('./examples/phylogeny_toy_json.json'). 
+[JSON of example phylogeny (pictured above)](./examples/phylogeny_toy_json.json). 
 
 
 
