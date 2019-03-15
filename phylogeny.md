@@ -64,10 +64,13 @@ the phylogeny, including required, conventional, and extra properties.
 Currently, two file formats are explicitly supported by the standard: comma-separated values (CSV) and [Javascript Object Notation (JSON)](https://www.json.org/). The details of describing a phylogeny using both file formats are given below.
 
 ### Comma-Separated Values (CSV)
-**Organization**
+**Organization and General Syntax**
 
 For a .csv file to be standards-compliant, the first row is expected to contain a header that defines the properties of the entities.
-Each entity (one specific taxon) of the phylogeny will fill one row of the .csv file. 
+
+Each entry (one specific taxon) of the phylogeny will fill one row of the .csv file.
+
+Whitespace is ignored except for newlines (\\n), which denote line breaks and thus new rows, and spaces on the inside of double quotes.
 
 **Lists**
 
@@ -87,10 +90,47 @@ While ancestor\_list is the only standards-defined property that is a list, any 
 
 **Example**
   
-[CSV of example phylogeny (pictured above)](./examples/phylogeny_toy_csv.csv)
+[CSV of example phylogeny (pictured above)](./examples/phylogeny_toy_csv.csv). You will have to click the 'Raw' button to see the underlying .csv instead of GitHub's table.
 
 
 ### Javascript Object Notation (JSON)
+
+**Organization and General Syntax**
+
+JSON is easiest described with an example:
+```
+{                                       //1
+    "21":{                              //2
+        "id":"22",                      //3
+        "ancestor_list": ["10", "11"],  //4
+        "origin_time": "1",             //5
+        "destruction_time" : "2"        //6
+    },                                  //7
+    "22":{                              //8
+        ...                             //9
+    }                                   //10
+}                                       //11
+```
+
+The ALife data standard is able to make use of JSON as it is described [here](https://www.json.org/) without any major tweaks.  
+
+A few things should be noted:
+
+- All file contents need surrounded by braces (Lines 1 and 11)
+- Each entry is its own object (Lines 2-7 and 8-10)
+    - This requires it to be a key-value pair.
+    - The key is the id of that entry, the value is another object specifying property values. (Lines 2-7).
+    - Each of these property values is another key-value pair. 
+    - The key is the property name, the value is simply the value for that property (Lines 3-6).
+- All keys (names) are strings, and thus need to be surrounded by double quotes "".
+- All numeric values are also strings, to allow for arbitrary accuracy. So they also need quotes.
+- Lists are denoted in brackets, with elements seperated by commas (Line 4). 
+    - Again, these elements are often strings and thus need their own double quotes. 
+- Commas are important!
+    - Note the commas after all properties but the last one for entry 22 (Lines 3-5 vs line 6). 
+    - Also note that there is a comma after each entry other than the last one.  
+
+
 
 
 ## Suggestions/Issues/Contributions
