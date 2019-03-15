@@ -8,7 +8,7 @@
 - [Overview](#overview)
 - [What are we trying to standardize?](#what-are-we-trying-to-standardize)
 - [A living standard](#a-living-standard)
-- [Standard data types](#standard-data-types)
+- [Standard data types (concepts)](#standard-data-types-concepts)
 - [Organization](#organization)
   - [Current maintainers](#current-maintainers)
   - [Code of Conduct](#code-of-conduct)
@@ -49,9 +49,12 @@ standards are also welcome.
 Eventually, we should develop policies/templates for requesting/specifying standards.
 Suggestions for this are welcome!
 
-## Standard data types
+## Standard data types (concepts)
 
-Different systems and experiments need to represent different types of data. We aim to modularize those types into their own standards, with the aim of ensuring that these standards as a whole are complimentary to each other. For instance, the elements in a phylogeny may be genotypes, but systems without phylogenies may also need genotypes. Instead of defining a standard for genomes in multiple places, we define it once and allow references to genomes to show up in other standards.
+Different systems and experiments need to represent different types of data (concepts).
+We aim to modularize those concepts into their own standards, ensuring that these standards as a whole are complimentary to each other.
+For instance, the entities in a phylogeny may be genotypes, but systems without phylogenies may also need genotypes.
+Instead of defining a standard for genomes in multiple places, we define it once and allow references to genomes to show up in other standards.
 
 The standards that we have begun developing thus far are:
 
@@ -60,6 +63,7 @@ The standards that we have begun developing thus far are:
 
 In the long run, there are more components of ALife systems that we hope ot have standards for, including:
 
+- Meta-data (data that provides context for other data)
 - Brains/controllers/information processing units
 - Interaction networks (graphs indicating interactions between members of a population)
 - Behavior (may or may not be practical, but worth discussing)
@@ -68,7 +72,8 @@ In the long run, there are more components of ALife systems that we hope ot have
 
 ## Organization
 
-Standards-related materials all live inside repositories owned by the alife-data-standards organization. These materials are divided into two groups:
+Standards-related materials all live inside repositories owned by the alife-data-standards organization.
+These materials are divided into two groups:
 
 - The standards themselves, which live in this repository. Changes to the standards can be proposed in three different ways (to accommodate different levels of comfort with GitHub): submitting a pull request with the proposed changes to this repository, [making an issue on this repository](https://github.com/alife-data-standards/alife-data-standards/issues/new), or e-mailing the standards maintainers (listed below). Once a modification is proposed, discussion on it will take place via GitHub issues (which also supports contributions via e-mail). When consensus is reached, the change will be added to the official standards.
 - A vetted collection of tools that work with standards-compliant data, which live in the [tools repository](https://github.com/alife-data-standards/alife-data-tools/). These tools include converters into and out of the standards format. If you have written a tool that you would like to add to this repository, you can request that it be added via pull request, [issue](https://github.com/alife-data-standards/alife-data-tools/issues/new), or an e-mail to the maintainers. The maintainers will then confirm that the tool works with the current version of the standards before accepting the addition. Updates to tools can be added in the same way. This repository also houses a list of third-party tools that work with data in standards format. These tools are not vetted or tested by the ALife Data Standards maintainers. You can request that a tool be added to this list with a pull request, GitHub issue or e-mail.
