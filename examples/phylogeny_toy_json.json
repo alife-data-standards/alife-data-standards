@@ -1,0 +1,56 @@
+{
+    "0":{
+        "id": "0",
+        "ancestor_list": ["none"],
+        "origin_time": "0",
+        "destruction_time": "1",
+        "shape": "circle",
+        "corners": "rounded",
+        "color": "blue"
+    }, 
+    "1":{
+        "id": "1",
+        "ancestor_list": ["0"],
+        "origin_time": "1",
+        "destruction_time": "2",
+        "shape": "square",
+        "corners": "rounded",
+        "color": "blue"
+    },
+    "2":{
+        "id": "2",
+        "ancestor_list": ["0"],
+        "origin_time": "1",
+        "destruction_time": "2",
+        "shape": "circle",
+        "corners": "rounded",
+        "color": "purple"
+    },
+    "3":{
+        "id": "3",
+        "ancestor_list": ["1"],
+        "origin_time": "2",
+        "destruction_time": "none",
+        "shape": "square",
+        "corners": "sharp",
+        "color": "blue"
+    },
+    "4":{
+        "id": "4",
+        "ancestor_list": ["1"],
+        "origin_time": "2",
+        "destruction_time": "none",
+        "shape": "square",
+        "corners": "rounded",
+        "color": "yellow"
+    },
+    "5":{
+        "id": "5",
+        "ancestor_list": ["2"],
+        "origin_time": "2",
+        "destruction_time": "none",
+        "shape": "circle",
+        "corners": "rounded",
+        "color": "purple"
+    } 
+}

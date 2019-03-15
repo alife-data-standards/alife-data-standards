@@ -1,0 +1,7 @@
+id,ancestor_list,origin_time,destruction_time,shape,corners,color
+0,"['none']",0,1,circle,rounded,blue 
+1,"['0']",1,2,square,rounded,blue
+2,"['0']",1,2,circle,rounded,purple
+3,"['1']",2,none,square,sharp,blue
+4,"['1']",2,none,square,rounded,yellow
+5,"['2']",2,none,circle,rounded,purple
