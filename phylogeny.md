@@ -30,6 +30,7 @@ These are the minimum set of properties (i.e., fields) required to specify a phy
 You must have this information to conform to the standard.
 
 - **id**: A unique identifier. Must be a non-negative integer.
+  - There is a proposal to change this property name: [https://github.com/alife-data-standards/alife-data-standards/issues/16](https://github.com/alife-data-standards/alife-data-standards/issues/16)
 - **ancestor_list**: A list of ids. These must correspond to other entities (entries) in the current file.
   They are assumed to refer to the most direct ancestor(s) of this entity that exist with in a file.
   In many cases, these will be the direct parent(s) of this entity, but this will not always be the case.
