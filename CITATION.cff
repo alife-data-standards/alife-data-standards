@@ -1,0 +1,80 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Artificial Life Data Standards Project
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Alexander
+    family-names: Lalejini
+    affiliation: Grand Valley State University
+  - given-names: Emily
+    family-names: Dolson
+    affiliation: Michigan State University
+    orcid: 'https://orcid.org/0000-0001-8616-4898'
+  - given-names: Clifford
+    family-names: Bohm
+    affiliation: Michigan State University
+  - given-names: Austin
+    family-names: Ferguson
+    affiliation: Michigan State University
+abstract: >-
+  As the field of Artificial Life advances and grows, we
+  find ourselves in the midst of an increasingly complex
+  ecosystem of software systems. Each system is developed to
+  address particular research objectives, all unified under
+  the common goal of understanding life. Such an ambitious
+  endeavor begets a variety of algorithmic challenges. Many
+  projects have solved some of these problems for individual
+  systems, but these solutions are rarely portable and often
+  must be re-engineered across systems. Here, we propose a
+  community-driven process of developing standards for
+  representing commonly used types of data across our field.
+  These standards will improve software re-use across
+  research groups and allow for easier comparisons of
+  results generated with different artificial life systems.
+  We began the process of developing data standards with two
+  discussion-driven workshops (one at the 2018 Conference
+  for Artificial Life and the other at the 2018 Congress for
+  the BEACON Center for the Study of Evolution in Action).
+  At each of these workshops, we discussed the vision for
+  Artificial Life data standards, proposed and refined a
+  standard for phylogeny (ancestry tree) data, and solicited
+  feedback from attendees. In addition to proposing a
+  general vision and framework for Artificial Life data
+  standards, we release and discuss version 1.0.0 of the
+  standards. This release includes the phylogeny data
+  standard developed at these workshops and several software
+  resources under development to support our proposed
+  phylogeny standards framework.
+keywords:
+  - artificial life
+  - data standards
+license: MIT
+preferred-citation:
+  type: conference-paper
+  authors:
+   - family-names: Lalejini
+     given-names: Alexander
+   - family-names: Dolson
+     given-names: Emily
+   - family-names: Bohm
+     given-names: Clifford
+   - family-names: Ferguson
+     given-names: Austin
+   - family-names: Parsons
+     given-names: David
+   - family-names: Faulkner Rainford
+     given-names: Penelope
+   - family-names: Richmond
+     given-names: Paul
+   - family-names: Ofria
+     given-names: Charles
+  title:  Data Standards for Artificial Life Software 
+  doi: 10.1162/isal_a_00213
+  year: 2019
+  conference:
+    name: "ALife 2019: The 2019 Conference on Artificial Life"
