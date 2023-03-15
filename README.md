@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/144045628.svg)](https://zenodo.org/badge/latestdoi/144045628)
+[![DOI](https://zenodo.org/badge/144045628.svg)](https://zenodo.org/badge/latestdoi/144045628) ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/alife-data-standards/alife-data-standards?label=Current%20version)
 
 
 **Navigation**
@@ -9,6 +9,7 @@
 - [What are we trying to standardize?](#what-are-we-trying-to-standardize)
 - [A living standard](#a-living-standard)
 - [Standard data types (concepts)](#standard-data-types-concepts)
+- [Version](#version)
 - [Organization](#organization)
   - [Current maintainers](#current-maintainers)
   - [Code of Conduct](#code-of-conduct)
@@ -69,6 +70,14 @@ In the long run, there are more components of ALife systems that we hope ot have
 - Behavior (may or may not be practical, but worth discussing)
 - Fitness landscape
 - [More?](https://github.com/alife-data-standards/alife-data-standards/issues/9)
+
+## Version
+
+The current version of the standards is 1.0-alpha.
+
+### Concept versions
+
+- The most recent change to the phylogeny standard was in version 1.0-alpha
 
 ## Organization
 
