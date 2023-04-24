@@ -35,6 +35,41 @@ You must have this information to conform to the standard.
   They are assumed to refer to the most direct ancestor(s) of this entity that exist with in a file.
   In many cases, these will be the direct parent(s) of this entity, but this will not always be the case.
 
+### **ancestor_list** Specification & Representation Details
+
+If using a serialization format that supports first-class list representations within row columns (e.g., JSON), that representation should be used to serialize **ancestor_list** entries.
+
+If using a serialization format without direct support for list representation within row columns (e.g., CSV), **ancestor_list** entries should be serialized as strings.
+An **ancestor_list** string must open with a left square bracket (`[`) as its first character and close with a right square bracket (`[`) as its last character.
+Between the brackets, **ancestor_list** entries should appear with sequential entries separated by a comma (`,`) character.
+A single space character (` ` i.e., U+0020 SPACE/ASCII 32) may optionally follow each `,` separator.
+As examples, the strings `[]`, `[1]`, `[1,2]`, and `[1, 2]` conform to **ancestor_list** requirements.
+
+Trailing comma string representations (i.e., `[,]`, `[1,]`, `[1,2,]`, etc.) are not supported under this standard.
+Leading zeros on integer identifiers are also not supported.
+
+For historical reasons, support should also be provided for `[None]`, `[none]`, or `[NONE]` as string representations of an empty ancestor list.
+However, new data should not use this convention and instead represent an empty ancestor list with the string `[]`.
+
+| Example **ancestor_list** | Valid?                 |
+|---------------------------|------------------------|
+| `[]`                      | :white_check_mark: yes |
+| `[1]`                     | :white_check_mark: yes |
+| `[1,2]`                   | :white_check_mark: yes |
+| `[1, 2]`                  | :white_check_mark: yes |
+| `[None]`                  | :warning: deprecated   |
+| `[none]`                  | :warning: deprecated   |
+| `[NONE]`                  | :warning: deprecated   |
+| `[ 1, 2]`                 | :x: no                 |
+| `[1 , 2]`                 | :x: no                 |
+| `[1,2,]`                  | :x: no                 |
+| `1, 2`                    | :x: no                 |
+
+Note that RFC 4180 requires CSV fields containing comma `,` characters to be escaped with surrounding `"` characters.
+Thus, `"[1, 2]"` would be a valid **ancestor_list**-column CSV field.
+Under RFC 4180, fields that do not contain comma `,` characters should not be escaped.
+Fields containing `[1]` or `[]` would be valid while fields containing `"[1]"` or `"[]"` would not.
+
 ### Conventional Properties
 
 These are common, but not required properties, for describing phylogenies.
