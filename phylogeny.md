@@ -43,6 +43,8 @@ If you have any of this information in your data, you should format it conventio
 - **origin_time:** Time that this entity first came into existence (in whatever time units the system that generated this data uses).
 - **destruction_time:** Time that this entry went out of existence (in whatever time units the system that generates this data uses).
 - **ancestor_id:** The **id** unique identifier of taxa's sole parent (only applicable to phylogenies and strictly asexual pedigrees; unparented taxa should list their own unique identifier).
+  When included, this column should provide identical information as **ancestor_list**.
+  Scenarios for its inclusion revolve solely around efficiency for certain postprocessing or analysis operations on asexual data.
 
 ### Extra Properties
 
