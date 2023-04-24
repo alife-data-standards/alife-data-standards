@@ -48,7 +48,15 @@ If using a serialization format that supports first-class integer representation
 
 If using a serialization format without direct support for integer representation within row columns, **id** entries should be serialized as strings.
 Such string representations must be base 10, must not include leading zeroes, and may only contain the characters `0`, `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, and `9` (i.e., no whitespace, thousands separators, or decimal separator).
-As an example, `1322` would be a valid **id** entry but `52a`, `01322`, `1,322`, `1 322`, or `1322.` would not.
+
+| Example **id** | Valid?                 |
+|----------------|------------------------|
+| `1322`         | :white_check_mark: yes |
+| `1322.`        | :x: no                 |
+| `52a`          | :x: no                 |
+| `01322`        | :x: no                 |
+| `1,322`        | :x: no                 |
+| `1 322`        | :x: no                 |
 
 ### Conventional Properties
 
