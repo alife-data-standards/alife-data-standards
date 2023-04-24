@@ -35,6 +35,29 @@ You must have this information to conform to the standard.
   They are assumed to refer to the most direct ancestor(s) of this entity that exist with in a file.
   In many cases, these will be the direct parent(s) of this entity, but this will not always be the case.
 
+### **id** Specification & Representation Details
+
+Identifier values should be less than or equal to 2,147,483,647 (`2^{31} - 1`).
+This limit corresponds to the maximum representable value for the signed 32 bit integer datatype.
+(If more than `2^{31} - 1` rows are required, larger identifier values may be used but full tooling support is not guaranteed.)
+
+Identifier values are not required to be allocated sequentially.
+Row order is not required to be sorted by identifier values.
+
+If using a serialization format that supports first-class integer representations within row columns (e.g., JSON), that representation should be used to serialize **id** entries.
+
+If using a serialization format without direct support for integer representation within row columns, **id** entries should be serialized as strings.
+Such string representations must be base 10, must not include leading zeroes, and may only contain the characters `0`, `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, and `9` (i.e., no whitespace, thousands separators, or decimal separator).
+
+| Example **id** | Valid?                 |
+|----------------|------------------------|
+| `1322`         | :white_check_mark: yes |
+| `1322.`        | :x: no                 |
+| `52a`          | :x: no                 |
+| `01322`        | :x: no                 |
+| `1,322`        | :x: no                 |
+| `1 322`        | :x: no                 |
+
 ### Conventional Properties
 
 These are common, but not required properties, for describing phylogenies.
