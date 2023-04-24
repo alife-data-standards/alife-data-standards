@@ -48,13 +48,27 @@ As examples, the strings `[]`, `[1]`, `[1,2]`, and `[1, 2]` conform to **ancesto
 Trailing comma string representations (i.e., `[,]`, `[1,]`, `[1,2,]`, etc.) are not supported under this standard.
 Leading zeros on integer identifiers are also not supported.
 
+For historical reasons, support should also be provided for `[None]`, `[none]`, or `[NONE]` as string representations of an empty ancestor list.
+However, new data should not use this convention and instead represent an empty ancestor list with the string `[]`.
+
+| Example **ancestor_list** | Valid?                 |
+|---------------------------|------------------------|
+| `[]`                      | :white_check_mark: yes |
+| `[1]`                     | :white_check_mark: yes |
+| `[1,2]`                   | :white_check_mark: yes |
+| `[1, 2]`                  | :white_check_mark: yes |
+| `[None]`                  | :warning: deprecated   |
+| `[none]`                  | :warning: deprecated   |
+| `[NONE]`                  | :warning: deprecated   |
+| `[ 1, 2]`                 | :x: no                 |
+| `[1 , 2]`                 | :x: no                 |
+| `[1,2,]`                  | :x: no                 |
+| `1, 2`                    | :x: no                 |
+
 Note that RFC 4180 requires CSV fields containing comma `,` characters to be escaped with surrounding `"` characters.
 Thus, `"[1, 2]"` would be a valid **ancestor_list**-column CSV field.
 Under RFC 4180, fields that do not contain comma `,` characters should not be escaped.
 Fields containing `[1]` or `[]` would be valid while fields containing `"[1]"` or `"[]"` would not.
-
-For historical reasons, support should also be provided for `[None]`, `[none]`, or `[NONE]` as string representations of an empty ancestor list.
-However, new data should not use this convention and instead represent an empty ancestor list with the string `[]`.
 
 ### Conventional Properties
 
